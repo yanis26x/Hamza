@@ -1,113 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Book a Call – H&Y Advertising Agency</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">
-      <img src="assets/hy-logo.png" alt="H&Y Advertising Agency logo" />
-    </a>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="booking.html" class="active">Book a Call</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero hero-small">
-    <div class="container hero-inner">
-      <div class="hero-text" data-animate>
-        <p class="eyebrow">Free Strategy Call</p>
-        <h1>Let’s map out your Meta Ads growth plan.</h1>
-        <p class="hero-subtitle">
-          Tell us a bit about your business and we’ll send you a confirmed time
-          for a 30-minute strategy call.
-        </p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book a Call – H&Y Advertising Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/hy-logo.png" alt="H&Y Advertising Agency logo" />
+        </a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="booking.html" class="active">Book a Call</a>
+          <a href="contact.html">Contact</a>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="section">
-    <div class="container split booking-layout">
-      <div class="card" data-animate>
-        <h2>Who is this call for?</h2>
-        <ul class="bullet-list">
-          <li>Businesses already running Meta Ads but not happy with results.</li>
-          <li>Brands that want to scale but are afraid to waste ad spend.</li>
-          <li>Entrepreneurs who need a clear, numbers-driven plan.</li>
-        </ul>
-        <p class="small">
-          Not a sales pressure call. If we’re not a fit, you still leave with
-          clarity on your next steps.
+    <main>
+      <section class="hero hero-small">
+        <div class="container hero-inner">
+          <div class="hero-text" data-animate>
+            <p class="eyebrow">Free Strategy Call</p>
+            <h1>Let’s map out your Meta Ads growth plan.</h1>
+            <p class="hero-subtitle">
+              Tell us a bit about your business and we’ll send you a confirmed
+              time for a 30-minute strategy call.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2
+            class="section-title"
+            style="text-align: center; margin-bottom: 1rem"
+          >
+            Book your Free Strategy Call
+          </h2>
+
+          <!-- Calendly Embed -->
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/hyadvertisingagency/30min?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+            style="min-width: 320px; height: 830px"
+          ></div>
+
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          ></script>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> H&amp;Y Advertising Agency. All rights
+          reserved.
         </p>
+        <div class="footer-links">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"
+            >Instagram</a
+          >
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
+    </footer>
 
-      <form class="card form" id="booking-form" data-animate>
-        <h2>Request your free call</h2>
-
-        <label>
-          Full name
-          <input type="text" name="name" required />
-        </label>
-
-        <label>
-          Business email
-          <input type="email" name="email" required />
-        </label>
-
-        <label>
-          Website / Store URL
-          <input type="url" name="website" placeholder="https://..." />
-        </label>
-
-        <label>
-          Monthly ad spend (approx.)
-          <select name="adspend" required>
-            <option value="">Select an option</option>
-            <option value="<2k">Less than $2,000</option>
-            <option value="2-5k">$2,000 – $5,000</option>
-            <option value="5-10k">$5,000 – $10,000</option>
-            <option value="10k+">$10,000+</option>
-          </select>
-        </label>
-
-        <label>
-          Main goal with Meta Ads
-          <textarea name="goal" rows="3" placeholder="E.g. lower CPA, scale spend, launch a new offer..." required></textarea>
-        </label>
-
-        <label>
-          Preferred time for the call
-          <input type="text" name="time" placeholder="E.g. Weekdays after 3pm (EST)" />
-        </label>
-
-        <button type="submit" class="btn primary full">Submit request</button>
-        <p class="form-message" id="booking-message"></p>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> H&amp;Y Advertising Agency. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
