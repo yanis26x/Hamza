@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – H&Y Advertising Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/hy-logo.png" alt="H&Y Advertising Agency logo" />
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="booking.html">Book a Call</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-small">
+    <div class="container hero-inner">
+      <div class="hero-text" data-animate>
+        <p class="eyebrow">Get in touch</p>
+        <h1>Let’s talk about your next growth step.</h1>
+        <p class="hero-subtitle">
+          Whether you have a quick question or want a full account review, drop
+          us a message and we’ll get back to you within 24 hours.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split contact-layout">
+      <div class="card contact-info" data-animate>
+        <h2>Contact details</h2>
+        <p><strong>Email:</strong> <a href="mailto:hello@hyagency.com">hello@hyagency.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hyadvertisingagency/" target="_blank" rel="noopener">@hyadvertisingagency</a></p>
+        <p><strong>Location:</strong> Remote – working with clients worldwide.</p>
+
+        <h3>Typical response time</h3>
+        <p>We usually respond within 24 business hours.</p>
+      </div>
+
+      <form class="card form" id="contact-form" data-animate>
+        <h2>Send us a message</h2>
+
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Subject
+          <input type="text" name="subject" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="btn primary full">Send message</button>
+        <p class="form-message" id="contact-message"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> H&amp;Y Advertising Agency. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
