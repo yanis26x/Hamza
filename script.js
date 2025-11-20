@@ -54,5 +54,5 @@ handleFormSubmit(
 handleFormSubmit(
   "contact-form",
   "contact-message",
-  "Message sent. We’ll get back to you within 24 hours."
+  "Message sent. We’ll get back to you at the email address you provided within 24 hours."
 );
