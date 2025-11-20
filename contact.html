@@ -50,32 +50,76 @@
         <p>We usually respond within 24 business hours.</p>
       </div>
 
-      <form class="card form" id="contact-form" data-animate>
-        <h2>Send us a Email</h2>
+      <form class="card form" data-animate onsubmit="openEmail(event)">
+  <h2>Send us an Email</h2>
 
-        <label>
-          Name
-          <input type="text" name="name" required />
-        </label>
+  <label>
+    Name
+    <input type="text" id="name" required />
+  </label>
 
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
+  <label>
+    Subject
+    <input type="text" id="subject" required />
+  </label>
 
-        <label>
-          Subject
-          <input type="text" name="subject" required />
-        </label>
+  <label>
+    Message
+    <textarea id="message" rows="4" required></textarea>
+  </label>
 
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
+  <button id="sendBtn" type="submit" class="btn primary full">
+    Send Email
+  </button>
 
-        <button type="submit" class="btn primary full">Send message</button>
-        <p class="form-message" id="contact-message"></p>
-      </form>
+  <p id="openingMsg" class="form-message" style="display:none; color:#6b7280;">
+    Opening your email app…
+  </p>
+</form>
+
+<script>
+function openEmail(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+
+  const body =
+    "Name: " + name +
+    "%0A%0A" +
+    message;
+
+  const sendBtn = document.getElementById("sendBtn");
+  const openingMsg = document.getElementById("openingMsg");
+
+  // Animation
+  sendBtn.disabled = true;
+  sendBtn.style.opacity = "0.7";
+  sendBtn.style.cursor = "default";
+  sendBtn.innerText = "Opening…";
+  openingMsg.style.display = "block";
+
+  // Wait a little before opening mail app (clean animation)
+  setTimeout(() => {
+    window.location.href =
+      "mailto:hello@hyagency.com"   // METTRE LEMAIL DE HAMZA ICIIIIIII !!!!!!!!!!!!!
+      + "?subject=" + encodeURIComponent(subject)
+      + "&body=" + body;
+
+    // Optional: reset button after 2 sec
+    setTimeout(() => {
+      sendBtn.disabled = false;
+      sendBtn.style.opacity = "1";
+      sendBtn.style.cursor = "pointer";
+      sendBtn.innerText = "Send message";
+      openingMsg.style.display = "none";
+    }, 2000);
+  }, 800);
+}
+</script>
+
+
     </div>
   </section>
 </main>
