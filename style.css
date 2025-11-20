@@ -495,3 +495,19 @@ a {
     align-items: flex-start;
   }
 }
+
+.credits {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.credits a {
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.credits a:hover {
+  opacity: 1;
+}
+
