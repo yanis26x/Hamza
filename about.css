@@ -213,7 +213,7 @@
 
 @keyframes flashBlink {
   0% { opacity: 0; }
-  30% { opacity: 0.60; } /* faible éclat */
+  30% { opacity: 0.80; } /* faible éclat */
   60% { opacity: 0; }
   100% { opacity: 0; }
 }
