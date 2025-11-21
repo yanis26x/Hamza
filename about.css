@@ -1,0 +1,199 @@
+/* ABOUT PAGE — FULL BLACK & BLUE THEME */
+
+.about-main {
+  background: radial-gradient(circle at top, #0a1a35 0%, #020617 40%, #000000 100%);
+  color: #c7d7ff;
+  min-height: 100vh;
+}
+
+/* HERO ABOUT */
+
+.about-hero {
+  padding: 4rem 0 3.5rem;
+  background: linear-gradient(180deg, #0a1a35 0%, #020617 60%, #000000 100%);
+}
+
+.about-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.about-eyebrow {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  color: #4da3ff;
+  margin-bottom: 0.55rem;
+}
+
+.about-hero-text h1 {
+  font-size: clamp(2.2rem, 3vw, 2.8rem);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  color: #e1e9ff;
+}
+
+.about-hero-subtitle {
+  margin: 0;
+  max-width: 32rem;
+  color: #95b3ff;
+}
+
+.about-hero-card {
+  background: rgba(4, 14, 35, 0.85);
+  border-radius: 20px;
+  padding: 1.6rem 1.5rem;
+  border: 1px solid rgba(56, 112, 255, 0.45);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
+}
+
+.about-tagline {
+  margin: 0 0 0.9rem;
+  font-weight: 500;
+  color: #9ec1ff;
+}
+
+.about-highlights li {
+  font-size: 0.9rem;
+  color: #c8dcff;
+}
+
+/* BLOCKS UNIFORMES — NO SECTION COLORS */
+
+.about-section {
+  background: linear-gradient(180deg, #000000 0%, #020617 50%, #000000 100%);
+  padding: 3.5rem 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
+  gap: 2.5rem;
+}
+
+.about-block {
+  background: rgba(5, 15, 40, 0.95);
+  border-radius: 20px;
+  padding: 1.7rem 1.6rem;
+  border: 1px solid rgba(68, 125, 255, 0.4);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.85);
+}
+
+.about-block h2 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  color: #e2e9ff;
+}
+
+.about-block p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #adc6ff;
+}
+
+/* PILLARS */
+
+.pillar h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  color: #d7e6ff;
+}
+
+.pillar p {
+  margin: 0;
+  color: #9bbcff;
+}
+
+/* STRIP — FULL BLACK WITH BLUE ACCENTS */
+
+.about-strip {
+  padding: 2.3rem 0;
+  background: linear-gradient(90deg, #020617 0%, #07142d 50%, #020617 100%);
+  border-top: 1px solid rgba(61, 116, 255, 0.35);
+  border-bottom: 1px solid rgba(61, 116, 255, 0.35);
+}
+
+.about-strip-label {
+  font-size: 0.8rem;
+  color: #7da6ff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.strip-step {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: rgba(7, 22, 60, 0.8);
+  border: 1px solid rgba(68, 125, 255, 0.45);
+  color: #dbe6ff;
+  font-size: 0.85rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.strip-number {
+  background: rgba(0, 0, 0, 0.7);
+  color: #7da6ff;
+}
+
+/* FOUNDER PART */
+
+.about-fit-list li {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #c9d9ff;
+}
+
+.about-quote-text {
+  font-size: 1.05rem;
+  color: #d5e3ff;
+}
+
+.about-quote-meta {
+  font-size: 0.85rem;
+  color: #8fb1ff;
+}
+
+/* ANIMATIONS */
+
+[data-about-animate] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+[data-about-animate].about-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-about-animate="left"] { transform: translateX(-24px); }
+[data-about-animate="right"] { transform: translateX(24px); }
+
+[data-about-animate="left"].about-visible,
+[data-about-animate="right"].about-visible {
+  transform: translateX(0);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .about-hero-inner,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    padding-top: 3rem;
+  }
+
+  .about-block {
+    padding: 1.4rem 1.25rem;
+  }
+}
