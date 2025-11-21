@@ -1,8 +1,8 @@
-/* ABOUT PAGE — FULL BLACK & BLUE THEME */
+/* ABOUT PAGE — FULL BLACK & PINK THEME */
 
 .about-main {
-  background: radial-gradient(circle at top, #0a1a35 0%, #020617 40%, #000000 100%);
-  color: #c7d7ff;
+  background: radial-gradient(circle at top, #2a0014 0%, #050008 40%, #000000 100%);
+  color: #ffd9ea;
   min-height: 100vh;
 }
 
@@ -10,7 +10,7 @@
 
 .about-hero {
   padding: 4rem 0 3.5rem;
-  background: linear-gradient(180deg, #0a1a35 0%, #020617 60%, #000000 100%);
+  background: linear-gradient(180deg, #3a001a 0%, #08000a 60%, #000000 100%);
 }
 
 .about-hero-inner {
@@ -24,7 +24,7 @@
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.18em;
-  color: #4da3ff;
+  color: #ff4da6;
   margin-bottom: 0.55rem;
 }
 
@@ -32,38 +32,38 @@
   font-size: clamp(2.2rem, 3vw, 2.8rem);
   line-height: 1.1;
   margin: 0 0 1rem;
-  color: #e1e9ff;
+  color: #ffe2f1;
 }
 
 .about-hero-subtitle {
   margin: 0;
   max-width: 32rem;
-  color: #95b3ff;
+  color: #ffb3d5;
 }
 
 .about-hero-card {
-  background: rgba(4, 14, 35, 0.85);
+  background: rgba(25, 0, 15, 0.85);
   border-radius: 20px;
   padding: 1.6rem 1.5rem;
-  border: 1px solid rgba(56, 112, 255, 0.45);
+  border: 1px solid rgba(255, 77, 166, 0.45);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9);
 }
 
 .about-tagline {
   margin: 0 0 0.9rem;
   font-weight: 500;
-  color: #9ec1ff;
+  color: #ffbcd9;
 }
 
 .about-highlights li {
   font-size: 0.9rem;
-  color: #c8dcff;
+  color: #ffd3e8;
 }
 
-/* BLOCKS UNIFORMES — NO SECTION COLORS */
+/* BLOCKS — FULL BLACK & PINK ACCENTS */
 
 .about-section {
-  background: linear-gradient(180deg, #000000 0%, #020617 50%, #000000 100%);
+  background: linear-gradient(180deg, #000000 0%, #070007 50%, #000000 100%);
   padding: 3.5rem 0;
 }
 
@@ -74,23 +74,23 @@
 }
 
 .about-block {
-  background: rgba(5, 15, 40, 0.95);
+  background: rgba(30, 0, 18, 0.9);
   border-radius: 20px;
   padding: 1.7rem 1.6rem;
-  border: 1px solid rgba(68, 125, 255, 0.4);
+  border: 1px solid rgba(255, 77, 166, 0.4);
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.85);
 }
 
 .about-block h2 {
   margin-top: 0;
   margin-bottom: 0.7rem;
-  color: #e2e9ff;
+  color: #ffe6f2;
 }
 
 .about-block p {
   margin-bottom: 0.8rem;
   font-size: 0.95rem;
-  color: #adc6ff;
+  color: #ffbfdc;
 }
 
 /* PILLARS */
@@ -98,26 +98,26 @@
 .pillar h3 {
   margin: 0 0 0.25rem;
   font-size: 1rem;
-  color: #d7e6ff;
+  color: #ffd9ea;
 }
 
 .pillar p {
   margin: 0;
-  color: #9bbcff;
+  color: #ffb5d4;
 }
 
-/* STRIP — FULL BLACK WITH BLUE ACCENTS */
+/* STRIP */
 
 .about-strip {
   padding: 2.3rem 0;
-  background: linear-gradient(90deg, #020617 0%, #07142d 50%, #020617 100%);
-  border-top: 1px solid rgba(61, 116, 255, 0.35);
-  border-bottom: 1px solid rgba(61, 116, 255, 0.35);
+  background: linear-gradient(90deg, #080008 0%, #240015 50%, #080008 100%);
+  border-top: 1px solid rgba(255, 105, 180, 0.4);
+  border-bottom: 1px solid rgba(255, 105, 180, 0.4);
 }
 
 .about-strip-label {
   font-size: 0.8rem;
-  color: #7da6ff;
+  color: #ff9ac7;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -128,34 +128,34 @@
   gap: 0.6rem;
   padding: 0.75rem 1rem;
   border-radius: 999px;
-  background: rgba(7, 22, 60, 0.8);
-  border: 1px solid rgba(68, 125, 255, 0.45);
-  color: #dbe6ff;
+  background: rgba(60, 0, 30, 0.75);
+  border: 1px solid rgba(255, 105, 180, 0.45);
+  color: #ffe8f3;
   font-size: 0.85rem;
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 .strip-number {
   background: rgba(0, 0, 0, 0.7);
-  color: #7da6ff;
+  color: #ff7abf;
 }
 
-/* FOUNDER PART */
+/* FOUNDER / QUOTE */
 
 .about-fit-list li {
   margin-bottom: 0.3rem;
   font-size: 0.9rem;
-  color: #c9d9ff;
+  color: #ffd6ec;
 }
 
 .about-quote-text {
   font-size: 1.05rem;
-  color: #d5e3ff;
+  color: #ffe1f2;
 }
 
 .about-quote-meta {
   font-size: 0.85rem;
-  color: #8fb1ff;
+  color: #ff9acb;
 }
 
 /* ANIMATIONS */
