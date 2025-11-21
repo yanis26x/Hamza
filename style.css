@@ -44,6 +44,32 @@ a {
 
 /* HEADER */
 
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.header-logo {
+  height: 44px;
+  width: auto;
+}
+
+.header-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  opacity: 0.92;
+  transition: opacity 0.2s ease;
+}
+
+.header-title:hover {
+  opacity: 1;
+}
+
+
 .site-header {
   position: sticky;
   top: 0;
