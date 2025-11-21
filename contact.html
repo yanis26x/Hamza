@@ -100,10 +100,10 @@ function openEmail(e) {
   sendBtn.innerText = "Opening…";
   openingMsg.style.display = "block";
 
-  // Wait a little before opening mail app (clean animation)
+  // Wait a little before opening mail app (animation)
   setTimeout(() => {
     window.location.href =
-      "mailto:hyadvertisingagency@gmail.com"   // METTRE LEMAIL DE HAMZA ICIIIIIII !!!!!!!!!!!!!
+      "mailto:hyadvertisingagency@gmail.com"  
       + "?subject=" + encodeURIComponent(subject)
       + "&body=" + body;
 

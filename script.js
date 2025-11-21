@@ -56,3 +56,15 @@ handleFormSubmit(
   "contact-message",
   "Message sent. We’ll get back to you at the email address you provided within 24 hours."
 );
+// Quote Slider
+let quoteIndex = 0;
+const quotes = document.querySelectorAll("#quote-slider .quote-item");
+
+function rotateQuotes() {
+  quotes.forEach(q => q.classList.remove("active"));
+
+  quoteIndex = (quoteIndex + 1) % quotes.length;
+  quotes[quoteIndex].classList.add("active");
+}
+
+setInterval(rotateQuotes, 4000); // change every 4 sec
